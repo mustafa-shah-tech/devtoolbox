@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roman Numeral Converter - DevToolbox</title>
+    <meta name="description" content="Convert numbers to Roman numerals and vice versa quickly and easily.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tool.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">🧰 DevToolbox</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &gt; Roman Numeral Converter
+        </div>
+
+        <div class="tool-layout">
+            <div class="tool-header">
+                <h1>Roman Numeral Converter</h1>
+                <p>Convert numbers to Roman numerals and back instantly.</p>
+            </div>
+
+            <div class="tool-container">
+                <div class="input-group">
+                    <label for="input-data">Enter Number or Roman Numeral</label>
+                    <input type="text" id="input-data" class="tool-input" placeholder="e.g. 2026 or MMXXVI">
+                </div>
+                <div class="action-buttons">
+                    <button id="btn-convert" class="btn btn-primary">Convert</button>
+                    <button id="btn-clear" class="btn btn-secondary">Clear</button>
+                </div>
+                <div class="input-group">
+                    <label for="output-data">Result</label>
+                    <input type="text" id="output-data" class="tool-input" readonly>
+                </div>
+                <div class="action-buttons">
+                    <button id="btn-copy" class="btn btn-secondary">Copy</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="tool-description">
+            <h2>About this Tool</h2>
+            <p>The Roman Numeral Converter easily translates modern numbers (Arabic numerals) into classic Roman numerals, and vice versa. It's a great utility for history students, crossword puzzle solvers, and developers working with specialized formatting requirements.</p>
+        </section>
+
+        <section class="how-to-use">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Enter either a standard number (like 42) or a Roman numeral (like XLII) into the input box.</li>
+                <li>Click the "Convert" button.</li>
+                <li>The converted value will instantly appear in the result box.</li>
+                <li>Click "Copy" to save the result to your clipboard.</li>
+            </ol>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is the highest number I can convert?</h3>
+                <p>Standard Roman numerals technically only go up to 3,999 (MMMCMXCIX). This tool supports valid conversions up to that limit.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Can I convert Roman numerals to regular numbers?</h3>
+                <p>Yes! The tool automatically detects if you've entered a Roman numeral (using letters like I, V, X, L, C, D, M) and will convert it back to a standard number.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are lowercase letters accepted?</h3>
+                <p>Yes, you can input Roman numerals in either uppercase or lowercase letters. The converter handles them perfectly.</p>
+            </div>
+        </section>
+
+        <div class="ad-slot">
+            <!-- AdSense goes here: Below Tool -->
+            AdSense Below Tool
+        </div>
+
+        <section class="related-tools">
+            <h2>You might also like</h2>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">🔢</div>
+                    <h3 class="tool-name">Number to Words</h3>
+                    <p class="tool-desc">Convert any number into its written English form.</p>
+                    <a href="number-to-words.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">〰️</div>
+                    <h3 class="tool-name">Text to Morse Code</h3>
+                    <p class="tool-desc">Convert text to Morse code and back.</p>
+                    <a href="morse-code.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📝</div>
+                    <h3 class="tool-name">Word Counter</h3>
+                    <p class="tool-desc">Count words, characters, sentences, and estimate reading time.</p>
+                    <a href="word-counter.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DevToolbox. Free Tools for Everyone. | <a href="../about.html">About</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../contact.html">Contact</a></p>
+    </footer>
+
+    <script src="../js/tools/roman-numeral.js"></script>
+</body>
+</html>

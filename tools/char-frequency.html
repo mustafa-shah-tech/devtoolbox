@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Character Frequency Counter - DevToolbox</title>
+    <meta name="description" content="Find out how many times each character or letter appears in your text.">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tool.css">
+    <style>
+        .freq-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .freq-table th, .freq-table td { border: 1px solid var(--border-color); padding: 8px; text-align: left; color: var(--text-primary); }
+        .freq-table th { background-color: var(--card-bg); font-weight: bold; }
+        .freq-bar-container { width: 100%; background: var(--border-color); height: 10px; border-radius: 5px; overflow: hidden; margin-top: 4px; }
+        .freq-bar { height: 100%; background: var(--accent-color); width: 0%; }
+        .case-option { display: flex; align-items: center; gap: 8px; margin-bottom: 1rem; color: var(--text-secondary); }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">🧰 DevToolbox</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &gt; Character Frequency Counter
+        </div>
+
+        <div class="tool-layout">
+            <div class="tool-header">
+                <h1>Character Frequency Counter</h1>
+                <p>Analyze your text to see which letters and characters appear the most.</p>
+            </div>
+
+            <div class="tool-container">
+                <div class="input-group">
+                    <label for="input-data">Enter Text</label>
+                    <textarea id="input-data" class="tool-input" rows="5" placeholder="Type or paste your text here..."></textarea>
+                </div>
+                
+                <div class="case-option">
+                    <input type="checkbox" id="ignore-case" checked>
+                    <label for="ignore-case">Ignore Case (treat 'A' and 'a' as the same)</label>
+                </div>
+                
+                <div class="case-option">
+                    <input type="checkbox" id="ignore-spaces" checked>
+                    <label for="ignore-spaces">Ignore Spaces and Line Breaks</label>
+                </div>
+
+                <div class="action-buttons">
+                    <button id="btn-count" class="btn btn-primary">Count Frequencies</button>
+                    <button id="btn-clear" class="btn btn-secondary">Clear</button>
+                </div>
+                
+                <div id="result-container" style="display: none; margin-top: 2rem;">
+                    <h3>Frequency Analysis</h3>
+                    <table class="freq-table">
+                        <thead>
+                            <tr>
+                                <th>Character</th>
+                                <th>Count</th>
+                                <th style="width: 50%;">Frequency</th>
+                            </tr>
+                        </thead>
+                        <tbody id="freq-body">
+                            <!-- Populated by JS -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <section class="tool-description">
+            <h2>About this Tool</h2>
+            <p>The Character Frequency Counter analyzes any block of text and calculates exactly how many times each letter, number, or symbol appears. It is highly useful for cryptography (like solving substitution ciphers), data analysis, and checking keyboard layout efficiencies.</p>
+        </section>
+
+        <section class="how-to-use">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Paste your text into the large input box.</li>
+                <li>Toggle the "Ignore Case" or "Ignore Spaces" checkboxes based on your needs.</li>
+                <li>Click the "Count Frequencies" button.</li>
+                <li>Review the generated table to see the exact count and percentage bar for each character, sorted from most to least frequent.</li>
+            </ol>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What does 'Ignore Case' mean?</h3>
+                <p>When 'Ignore Case' is checked, the tool treats uppercase (A) and lowercase (a) letters as the exact same character, combining their counts.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there a limit to how much text I can analyze?</h3>
+                <p>The tool can easily handle millions of characters directly in your browser without sending any data to a server.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are emojis supported?</h3>
+                <p>Yes, standard emojis and symbols are fully supported and will appear in the frequency list alongside standard text.</p>
+            </div>
+        </section>
+
+        <div class="ad-slot">
+            <!-- AdSense goes here: Below Tool -->
+            AdSense Below Tool
+        </div>
+
+        <section class="related-tools">
+            <h2>You might also like</h2>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">📝</div>
+                    <h3 class="tool-name">Word Counter</h3>
+                    <p class="tool-desc">Count words, characters, sentences, and estimate reading time.</p>
+                    <a href="word-counter.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🧹</div>
+                    <h3 class="tool-name">Duplicate Line Remover</h3>
+                    <p class="tool-desc">Quickly find and remove duplicate lines from a list.</p>
+                    <a href="duplicate-remover.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔠</div>
+                    <h3 class="tool-name">Case Converter</h3>
+                    <p class="tool-desc">Convert text to UPPERCASE, lowercase, Title Case, etc.</p>
+                    <a href="case-converter.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DevToolbox. Free Tools for Everyone. | <a href="../about.html">About</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../contact.html">Contact</a></p>
+    </footer>
+
+    <script src="../js/tools/char-frequency.js"></script>
+</body>
+</html>

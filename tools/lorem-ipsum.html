@@ -1,0 +1,122 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lorem Ipsum Generator - DevToolbox</title>
+    <meta name="description" content="Generate placeholder text with custom paragraph and word counts for your designs.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tool.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">🧰 DevToolbox</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &gt; Lorem Ipsum Generator
+        </div>
+
+        <div class="tool-layout">
+            <div class="tool-header">
+                <h1>Lorem Ipsum Generator</h1>
+                <p>Generate placeholder text for your mockups, websites, and designs.</p>
+            </div>
+
+            <div class="tool-container">
+                <div style="display: flex; gap: 1rem; margin-bottom: 1rem; align-items: center; flex-wrap: wrap;">
+                    <div class="input-group" style="margin-bottom: 0; flex: 1; min-width: 150px;">
+                        <label for="num-paragraphs">Paragraphs</label>
+                        <input type="number" id="num-paragraphs" class="tool-input" value="3" min="1" max="100">
+                    </div>
+                    <div class="input-group" style="margin-bottom: 0; flex: 1; min-width: 150px;">
+                        <label for="text-format">Format</label>
+                        <select id="text-format" class="tool-input">
+                            <option value="text">Plain Text</option>
+                            <option value="html">HTML Tags (&lt;p&gt;)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="action-buttons">
+                    <button id="btn-generate" class="btn btn-primary">Generate</button>
+                    <button id="btn-copy" class="btn btn-secondary">Copy</button>
+                </div>
+                <div class="input-group">
+                    <label for="output-data">Result</label>
+                    <textarea id="output-data" class="tool-input" rows="12" readonly></textarea>
+                </div>
+            </div>
+        </div>
+
+        <section class="tool-description">
+            <h2>About this Tool</h2>
+            <p>The Lorem Ipsum Generator creates standard, readable dummy text for designers, developers, and writers. It helps you visualize how text will look on a web page or in a layout without being distracted by the actual content.</p>
+        </section>
+
+        <section class="how-to-use">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Enter the number of paragraphs you need in the input field.</li>
+                <li>Select whether you want plain text or HTML formatted text (with paragraph tags).</li>
+                <li>Click the "Generate" button.</li>
+                <li>Review the generated text and click "Copy" to save it to your clipboard.</li>
+            </ol>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What does Lorem Ipsum mean?</h3>
+                <p>Lorem Ipsum is scrambled, nonsensical Latin text derived from Cicero's 1st-century BC work "De finibus bonorum et malorum." It has been used by printers and typesetters since the 1500s.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Why use dummy text instead of real text?</h3>
+                <p>Dummy text keeps reviewers and designers focused on the layout, typography, and visual hierarchy, rather than getting distracted by reading the content.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Is there a limit to how much text I can generate?</h3>
+                <p>This tool allows you to generate up to 100 paragraphs at once, ensuring your browser remains fast and responsive.</p>
+            </div>
+        </section>
+
+        <div class="ad-slot">
+            <!-- AdSense goes here: Below Tool -->
+            AdSense Below Tool
+        </div>
+
+        <section class="related-tools">
+            <h2>You might also like</h2>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">🔠</div>
+                    <h3 class="tool-name">Case Converter</h3>
+                    <p class="tool-desc">Convert text to UPPERCASE, lowercase, Title Case, etc.</p>
+                    <a href="case-converter.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📝</div>
+                    <h3 class="tool-name">Word Counter</h3>
+                    <p class="tool-desc">Count words, characters, sentences, and estimate reading time.</p>
+                    <a href="word-counter.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📊</div>
+                    <h3 class="tool-name">Character Frequency Counter</h3>
+                    <p class="tool-desc">Find out how many times each character appears in your text.</p>
+                    <a href="char-frequency.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DevToolbox. Free Tools for Everyone. | <a href="../about.html">About</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../contact.html">Contact</a></p>
+    </footer>
+
+    <script src="../js/tools/lorem-ipsum.js"></script>
+</body>
+</html>

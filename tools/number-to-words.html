@@ -1,0 +1,116 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Number to Words Converter - DevToolbox</title>
+    <meta name="description" content="Convert any numerical digit into its written English format instantly.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tool.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">🧰 DevToolbox</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &gt; Number to Words
+        </div>
+
+        <div class="tool-layout">
+            <div class="tool-header">
+                <h1>Number to Words</h1>
+                <p>Convert any number into its written English spelling.</p>
+            </div>
+
+            <div class="tool-container">
+                <div class="input-group">
+                    <label for="input-data">Enter Number</label>
+                    <input type="number" id="input-data" class="tool-input" placeholder="e.g. 1042">
+                </div>
+                <div class="action-buttons">
+                    <button id="btn-convert" class="btn btn-primary">Convert</button>
+                    <button id="btn-clear" class="btn btn-secondary">Clear</button>
+                </div>
+                <div class="input-group">
+                    <label for="output-data">Result</label>
+                    <textarea id="output-data" class="tool-input" rows="3" readonly></textarea>
+                </div>
+                <div class="action-buttons">
+                    <button id="btn-copy" class="btn btn-secondary">Copy</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="tool-description">
+            <h2>About this Tool</h2>
+            <p>The Number to Words Converter takes standard digits and translates them into proper written English words. It is highly useful for writing legal documents, checks, formal invitations, or double-checking grammar formatting.</p>
+        </section>
+
+        <section class="how-to-use">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Type your numerical digit into the input field (e.g., "1500").</li>
+                <li>Click the "Convert" button to generate the text.</li>
+                <li>The translated phrase (e.g., "one thousand five hundred") will appear in the result box.</li>
+                <li>Use the "Copy" button to save it to your clipboard.</li>
+            </ol>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What is the maximum number supported?</h3>
+                <p>This tool safely processes numbers up to the trillions natively within your browser without performance loss.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does it support decimals?</h3>
+                <p>Currently, the tool focuses on whole numbers (integers). Decimals will be truncated or ignored.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are negative numbers supported?</h3>
+                <p>Yes, simply prefix the number with a minus sign (`-`), and the output will start with "negative".</p>
+            </div>
+        </section>
+
+        <div class="ad-slot">
+            <!-- AdSense goes here: Below Tool -->
+            AdSense Below Tool
+        </div>
+
+        <section class="related-tools">
+            <h2>You might also like</h2>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">🔢</div>
+                    <h3 class="tool-name">Roman Numeral Converter</h3>
+                    <p class="tool-desc">Convert numbers to Roman numerals and back.</p>
+                    <a href="roman-numeral.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">%</div>
+                    <h3 class="tool-name">Percentage Calculator</h3>
+                    <p class="tool-desc">Calculate percentages, increases, and decreases easily.</p>
+                    <a href="percentage-calc.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🎂</div>
+                    <h3 class="tool-name">Age Calculator</h3>
+                    <p class="tool-desc">Find out your exact age in years, months, and days.</p>
+                    <a href="age-calculator.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DevToolbox. Free Tools for Everyone. | <a href="../about.html">About</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../contact.html">Contact</a></p>
+    </footer>
+
+    <script src="../js/tools/number-to-words.js"></script>
+</body>
+</html>

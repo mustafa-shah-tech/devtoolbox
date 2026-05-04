@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text to Morse Code - DevToolbox</title>
+    <meta name="description" content="Convert standard text into Morse code, or decode Morse code back into text.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tool.css">
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">🧰 DevToolbox</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &gt; Text to Morse Code
+        </div>
+
+        <div class="tool-layout">
+            <div class="tool-header">
+                <h1>Text to Morse Code</h1>
+                <p>Instantly translate text to Morse code and vice versa.</p>
+            </div>
+
+            <div class="tool-container">
+                <div class="input-group">
+                    <label for="input-data">Enter Text or Morse Code</label>
+                    <textarea id="input-data" class="tool-input" rows="4" placeholder="Enter text or Morse code (e.g. .... . .-.. .-.. ---)"></textarea>
+                </div>
+                <div class="action-buttons">
+                    <button id="btn-encode" class="btn btn-primary">Encode Text</button>
+                    <button id="btn-decode" class="btn btn-primary">Decode Morse</button>
+                    <button id="btn-clear" class="btn btn-secondary">Clear</button>
+                </div>
+                <div class="input-group">
+                    <label for="output-data">Result</label>
+                    <textarea id="output-data" class="tool-input" rows="4" readonly></textarea>
+                </div>
+                <div class="action-buttons">
+                    <button id="btn-copy" class="btn btn-secondary">Copy</button>
+                </div>
+            </div>
+        </div>
+
+        <section class="tool-description">
+            <h2>About this Tool</h2>
+            <p>Our Text to Morse Code translator allows you to convert standard English characters and numbers into international Morse code dots and dashes, or perform the exact opposite. It is a handy tool for hobbyists, ham radio operators, and puzzle enthusiasts.</p>
+        </section>
+
+        <section class="how-to-use">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Paste your English text or Morse code into the top input box.</li>
+                <li>Click "Encode Text" to translate letters and numbers into dots and dashes.</li>
+                <li>Alternatively, click "Decode Morse" to turn dots (`.`) and dashes (`-`) back into readable text.</li>
+                <li>Click "Copy" to save your result.</li>
+            </ol>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>What format of Morse code is accepted?</h3>
+                <p>The decoder expects standard dots (`.`) and dashes (`-`). Letters should be separated by a single space, and words should be separated by a slash (`/`) or three spaces.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Are special characters supported?</h3>
+                <p>Standard punctuation marks like periods, commas, and question marks have corresponding Morse code symbols and are supported. Other special symbols will be ignored.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Does case matter?</h3>
+                <p>No, Morse code does not distinguish between uppercase and lowercase letters. The encoder will treat everything uniformly.</p>
+            </div>
+        </section>
+
+        <div class="ad-slot">
+            <!-- AdSense goes here: Below Tool -->
+            AdSense Below Tool
+        </div>
+
+        <section class="related-tools">
+            <h2>You might also like</h2>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">🔐</div>
+                    <h3 class="tool-name">Base64 Encoder</h3>
+                    <p class="tool-desc">Encode and decode text in Base64 format.</p>
+                    <a href="base64.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔄</div>
+                    <h3 class="tool-name">Text Reverser</h3>
+                    <p class="tool-desc">Reverse your text character by character instantly.</p>
+                    <a href="text-reverser.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔢</div>
+                    <h3 class="tool-name">Roman Numeral Converter</h3>
+                    <p class="tool-desc">Convert numbers to Roman numerals and back.</p>
+                    <a href="roman-numeral.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DevToolbox. Free Tools for Everyone. | <a href="../about.html">About</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../contact.html">Contact</a></p>
+    </footer>
+
+    <script src="../js/tools/morse-code.js"></script>
+</body>
+</html>
