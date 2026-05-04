@@ -277,3 +277,12 @@ pre#output {
     line-height: 1.6;
     margin: 0;
 }
+
+/* Tool Container and UI Elements */
+.tool-container { margin-top: 1rem; }
+.action-buttons { display: flex; gap: 10px; margin-bottom: 20px; flex-wrap: wrap; }
+.tool-input { width: 100%; background-color: var(--bg-color); border: 1px solid var(--border-color); border-radius: 4px; color: var(--text-primary); padding: 12px; font-family: inherit; font-size: 1rem; }
+.tool-input:focus { outline: none; border-color: var(--accent-color); }
+select.tool-input { resize: none; cursor: pointer; }
+.btn-primary { background-color: var(--accent-color); color: white; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold; transition: background-color 0.2s; }
+.btn-primary:hover { background-color: var(--accent-hover); }
