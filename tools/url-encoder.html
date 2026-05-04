@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -52,6 +52,32 @@
             <p>URL encoding is critical for passing parameters safely in web addresses. The URL Encoder/Decoder tool converts special characters in your text into a URL-friendly format, preventing broken links and server errors. It can also decode encoded URLs back to normal text to see exactly what parameters are being passed.</p>
         </section>
 
+        <section class="how-to-use">
+            <h2>How to Use</h2>
+            <ol>
+                <li>Paste your full URL or the specific parameter string into the input area.</li>
+                <li>Click "Encode URL" to make the string safe for web transmission by converting special characters into `%` formats.</li>
+                <li>Click "Decode URL" to turn an encoded, hard-to-read URL back into normal text.</li>
+                <li>Click the "Copy" button to easily copy the result.</li>
+            </ol>
+        </section>
+
+        <section class="faq-section">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-item">
+                <h3>Why do URLs need to be encoded?</h3>
+                <p>URLs can only be sent over the Internet using the ASCII character-set. Encoding translates unsafe ASCII characters (like spaces) into a valid format so links don't break.</p>
+            </div>
+            <div class="faq-item">
+                <h3>What is the difference between URI and URL encoding?</h3>
+                <p>They are virtually identical in modern contexts. This tool uses standard JavaScript encoding functions (`encodeURIComponent` and `decodeURIComponent`) which safely handle both.</p>
+            </div>
+            <div class="faq-item">
+                <h3>Should I encode the entire URL or just the parameters?</h3>
+                <p>Usually, you only encode the query parameters (the part after the `?`). If you encode the `https://`, it will break the link.</p>
+            </div>
+        </section>
+
         <div class="ad-slot">
             <!-- AdSense goes here: Below Tool -->
             AdSense Below Tool
@@ -83,7 +109,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2026 DevToolbox. Free Tools for Everyone. | <a href="../about.html">About</a> | <a href="../privacy.html">Privacy Policy</a></p>
+        <p>&copy; 2026 DevToolbox. Free Tools for Everyone. | <a href="../about.html">About</a> | <a href="../privacy.html">Privacy Policy</a> | <a href="../contact.html">Contact</a></p>
     </footer>
 
     <script src="../js/tools/url-encoder.js"></script>
