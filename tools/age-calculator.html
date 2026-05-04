@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - DevToolbox</title>
+    <meta name="description" content="Free online age calculator. Find out your exact age in years, months, and days.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tool.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">🧰 DevToolbox</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &gt; Calculators &gt; Age Calculator
+        </div>
+
+        <div class="tool-header">
+            <h1>Age Calculator</h1>
+            <p>Find out your exact age in years, months, and days.</p>
+        </div>
+
+        <div class="tool-layout">
+            <div class="tool-main">
+                <div class="input-group">
+                    <label for="dob">Date of Birth:</label>
+                    <input type="date" id="dob">
+                </div>
+
+                <div class="input-group">
+                    <label for="targetDate">Calculate age at this date (optional, defaults to today):</label>
+                    <input type="date" id="targetDate">
+                </div>
+                
+                <div class="button-group">
+                    <button class="btn" id="btnCalc">Calculate Age</button>
+                </div>
+
+                <div class="input-group hidden" id="resultContainer">
+                    <label>Your Exact Age:</label>
+                    <div class="age-result">
+                        <div class="age-box">
+                            <div class="val" id="resYears">0</div>
+                            <div class="lbl">Years</div>
+                        </div>
+                        <div class="age-box">
+                            <div class="val" id="resMonths">0</div>
+                            <div class="lbl">Months</div>
+                        </div>
+                        <div class="age-box">
+                            <div class="val" id="resDays">0</div>
+                            <div class="lbl">Days</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad-slot">
+            <!-- AdSense goes here: Below Tool -->
+            AdSense Below Tool
+        </div>
+
+        <section class="related-tools">
+            <h2>You might also like</h2>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">%</div>
+                    <h3 class="tool-name">Percentage Calculator</h3>
+                    <p class="tool-desc">Calculate percentages, increases, and decreases easily.</p>
+                    <a href="percentage-calc.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">📝</div>
+                    <h3 class="tool-name">Word Counter</h3>
+                    <p class="tool-desc">Count words, characters, sentences, and estimate reading time.</p>
+                    <a href="word-counter.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🎂</div>
+                    <h3 class="tool-name">Age Calculator</h3>
+                    <p class="tool-desc">Find out your exact age in years, months, and days.</p>
+                    <a href="age-calculator.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DevToolbox. Free Tools for Everyone.</p>
+    </footer>
+
+    <script src="../js/tools/age-calculator.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Formatter & Validator - DevToolbox</title>
+    <meta name="description" content="Free online tool to format and validate raw JSON with syntax highlighting.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tool.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">🧰 DevToolbox</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &gt; Developer Tools &gt; JSON Formatter
+        </div>
+
+        <div class="tool-header">
+            <h1>JSON Formatter</h1>
+            <p>Format and validate raw JSON. Errors are caught and displayed gracefully.</p>
+        </div>
+
+        <div class="tool-layout">
+            <div class="tool-main">
+                <div class="input-group">
+                    <label for="textInput">Paste raw JSON here:</label>
+                    <textarea id="textInput" rows="8" placeholder='{"key": "value"}'></textarea>
+                </div>
+                
+                <div class="button-group">
+                    <button class="btn" id="btnFormat">Format JSON</button>
+                    <button class="btn btn-secondary" id="btnMinify">Minify JSON</button>
+                </div>
+
+                <div class="input-group">
+                    <label>Output:</label>
+                    <div class="output-area" id="outputArea">
+                        <button class="copy-btn" id="copyBtn">Copy</button>
+                        <pre id="output"></pre>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad-slot">
+            <!-- AdSense goes here: Below Tool -->
+            AdSense Below Tool
+        </div>
+
+        <section class="related-tools">
+            <h2>You might also like</h2>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">🔐</div>
+                    <h3 class="tool-name">Base64 Encode/Decode</h3>
+                    <p class="tool-desc">Quickly encode text to Base64 or decode it back.</p>
+                    <a href="base64.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔗</div>
+                    <h3 class="tool-name">URL Encoder</h3>
+                    <p class="tool-desc">Encode and decode URLs safely and easily.</p>
+                    <a href="url-encoder.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">&lt;&gt;</div>
+                    <h3 class="tool-name">HTML Entity</h3>
+                    <p class="tool-desc">Encode special characters to HTML entities and back.</p>
+                    <a href="html-entity.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DevToolbox. Free Tools for Everyone.</p>
+    </footer>
+
+    <script src="../js/tools/json-formatter.js"></script>
+</body>
+</html>

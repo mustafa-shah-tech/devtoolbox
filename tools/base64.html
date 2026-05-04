@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base64 Encoder & Decoder - DevToolbox</title>
+    <meta name="description" content="Free tool to quickly encode text to Base64 or decode Base64 back to text.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tool.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">🧰 DevToolbox</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &gt; Developer Tools &gt; Base64
+        </div>
+
+        <div class="tool-header">
+            <h1>Base64 Encoder / Decoder</h1>
+            <p>Encode plain text into Base64 or decode Base64 strings back to plain text.</p>
+        </div>
+
+        <div class="tool-layout">
+            <div class="tool-main">
+                <div class="input-group">
+                    <label for="textInput">Enter text or Base64:</label>
+                    <textarea id="textInput" rows="6" placeholder="Type here..."></textarea>
+                </div>
+                
+                <div class="button-group">
+                    <button class="btn" id="btnEncode">Encode to Base64</button>
+                    <button class="btn btn-secondary" id="btnDecode">Decode Base64</button>
+                </div>
+
+                <div class="input-group">
+                    <label>Result:</label>
+                    <div class="output-area" id="outputArea">
+                        <button class="copy-btn" id="copyBtn">Copy</button>
+                        <div id="output"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad-slot">
+            <!-- AdSense goes here: Below Tool -->
+            AdSense Below Tool
+        </div>
+
+        <section class="related-tools">
+            <h2>You might also like</h2>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">{}</div>
+                    <h3 class="tool-name">JSON Formatter</h3>
+                    <p class="tool-desc">Format and validate raw JSON with syntax highlighting.</p>
+                    <a href="json-formatter.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔗</div>
+                    <h3 class="tool-name">URL Encoder</h3>
+                    <p class="tool-desc">Encode and decode URLs safely and easily.</p>
+                    <a href="url-encoder.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">&lt;&gt;</div>
+                    <h3 class="tool-name">HTML Entity</h3>
+                    <p class="tool-desc">Encode special characters to HTML entities and back.</p>
+                    <a href="html-entity.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DevToolbox. Free Tools for Everyone.</p>
+    </footer>
+
+    <script src="../js/tools/base64.js"></script>
+</body>
+</html>

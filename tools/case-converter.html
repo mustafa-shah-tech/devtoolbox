@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Converter - DevToolbox</title>
+    <meta name="description" content="Free online case converter tool. Change text to uppercase, lowercase, title case, or sentence case.">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/tool.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="../index.html" class="logo">🧰 DevToolbox</a>
+        </div>
+    </header>
+
+    <main>
+        <div class="breadcrumb">
+            <a href="../index.html">Home</a> &gt; Text Tools &gt; Case Converter
+        </div>
+
+        <div class="tool-header">
+            <h1>Case Converter</h1>
+            <p>Convert text to UPPERCASE, lowercase, Title Case, or Sentence case instantly.</p>
+        </div>
+
+        <div class="tool-layout">
+            <div class="tool-main">
+                <div class="input-group">
+                    <label for="textInput">Enter your text:</label>
+                    <textarea id="textInput" rows="6" placeholder="Type or paste text here..."></textarea>
+                </div>
+                
+                <div class="button-group">
+                    <button class="btn" id="btnUpper">UPPERCASE</button>
+                    <button class="btn" id="btnLower">lowercase</button>
+                    <button class="btn" id="btnTitle">Title Case</button>
+                    <button class="btn" id="btnSentence">Sentence case</button>
+                </div>
+
+                <div class="input-group">
+                    <label>Result:</label>
+                    <div class="output-area">
+                        <button class="copy-btn" id="copyBtn">Copy</button>
+                        <div id="output"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="ad-slot">
+            <!-- AdSense goes here: Below Tool -->
+            AdSense Below Tool
+        </div>
+
+        <section class="related-tools">
+            <h2>You might also like</h2>
+            <div class="tool-grid">
+                <div class="tool-card">
+                    <div class="tool-icon">📝</div>
+                    <h3 class="tool-name">Word Counter</h3>
+                    <p class="tool-desc">Count words, characters, sentences, and estimate reading time.</p>
+                    <a href="word-counter.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">🔄</div>
+                    <h3 class="tool-name">Text Reverser</h3>
+                    <p class="tool-desc">Reverse your text character by character instantly.</p>
+                    <a href="text-reverser.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+                <div class="tool-card">
+                    <div class="tool-icon">✂️</div>
+                    <h3 class="tool-name">Duplicate Remover</h3>
+                    <p class="tool-desc">Remove duplicate lines from text and get cleaned output.</p>
+                    <a href="duplicate-remover.html" class="btn btn-secondary">Use Tool</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 DevToolbox. Free Tools for Everyone.</p>
+    </footer>
+
+    <script src="../js/tools/case-converter.js"></script>
+</body>
+</html>
