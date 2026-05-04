@@ -221,3 +221,15 @@ pre#output {
     color: var(--text-secondary);
     margin-left: 10px;
 }
+
+.tool-description {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    color: var(--text-secondary);
+    line-height: 1.6;
+}
+
+.tool-description h2 {
+    margin-bottom: 0.75rem;
+}
